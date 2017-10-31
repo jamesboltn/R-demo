@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{3deb5410-add3-408f-8bb3-a208e101d273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Model\IP Helper">
+      <UniqueIdentifier>{20c544a3-a545-430a-b332-c6001b5226da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\IP Helper">
+      <UniqueIdentifier>{3e59d137-fbcf-4775-8e52-c6099d747e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{59c9a083-23fc-400e-b67a-73dac97b1ad4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NetworkEntry.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketBase.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="InternetOption.cpp">
+      <Filter>Implementation\IP Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkAdapterHelper.cpp">
+      <Filter>Implementation\IP Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkGlobalObject.cpp">
+      <Filter>Implementation\IP Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkInterface.cpp">
+      <Filter>Implementation\IP Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkInterfaceHelper.cpp">
+      <Filter>Implementation\IP Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkUtilities.cpp">
+      <Filter>Implementation\IP Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketBaseTCP.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketBaseUDP.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPClient.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPClient.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPServer.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPServer.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SocketBase.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkDef.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkStruct.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="InternetOption.h">
+      <Filter>Model\IP Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkAdapterHelper.h">
+      <Filter>Model\IP Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkGlobalObject.h">
+      <Filter>Model\IP Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkInterface.h">
+      <Filter>Model\IP Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkInterfaceHelper.h">
+      <Filter>Model\IP Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkUtilities.h">
+      <Filter>Model\IP Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketBaseTCP.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketBaseUDP.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPClient.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="UDPClient.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPServer.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerBase.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="UDPServer.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Network.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

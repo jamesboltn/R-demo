@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ControlBase" Collapsed="true">
+    <Position X="16" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAABABQAAAAAAAAAAAABQAAAA=</HashCode>
+      <FileName>ControlBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBind">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAEEAAAAAAAAAAAAAIAAAAAAAAAABAAQBQIIA=</HashCode>
+      <FileName>DataBind.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PageManager">
+    <Position X="20.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAEAAAAAAAgAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>PageManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIBase" Collapsed="true">
+    <Position X="12.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgAAAEICAQAwI0IEACAJgEAAECAQAAAppAMhmEAA=</HashCode>
+      <FileName>UIBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Window" Collapsed="true">
+    <Position X="11.25" Y="3" Width="1.5" />
+    <InheritanceLine Type="UIBase" ManuallyRouted="true">
+      <Path>
+        <Point X="13.25" Y="1.298" />
+        <Point X="13.25" Y="2.438" />
+        <Point X="12" Y="2.438" />
+        <Point X="12" Y="3" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="ControlMessageHandler" ManuallyRouted="true">
+      <Path>
+        <Point X="10" Y="1.298" />
+        <Point X="10" Y="2.457" />
+        <Point X="12" Y="2.457" />
+        <Point X="12" Y="3" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAEkIJABIAAAAAQAACAAICASAIAA4AAAIACIwMAQA=</HashCode>
+      <FileName>Window.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowClass">
+    <Position X="22.5" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WindowClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menu" Collapsed="true">
+    <Position X="14.5" Y="3" Width="1.5" />
+    <InheritanceLine Type="ControlBase" ManuallyRouted="true">
+      <Path>
+        <Point X="16.75" Y="1.298" />
+        <Point X="16.75" Y="2.523" />
+        <Point X="15.25" Y="2.523" />
+        <Point X="15.25" Y="3" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="UIBase" ManuallyRouted="true">
+      <Path>
+        <Point X="13.25" Y="1.298" />
+        <Point X="13.25" Y="2.478" />
+        <Point X="15.25" Y="2.478" />
+        <Point X="15.25" Y="3" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAiAAAAIAAAAgAIAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Menu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Page" Collapsed="true">
+    <Position X="7.75" Y="3" Width="1.5" />
+    <InheritanceLine Type="ControlMessageHandler" ManuallyRouted="true">
+      <Path>
+        <Point X="10" Y="1.298" />
+        <Point X="10" Y="2.487" />
+        <Point X="8.5" Y="2.487" />
+        <Point X="8.5" Y="3" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAACAAABAAABAAAAA=</HashCode>
+      <FileName>Page.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlMessageHandler" Collapsed="true">
+    <Position X="9" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>ControlMessageHandler.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bitmap" Collapsed="true">
+    <Position X="4.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAACAAIgACAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Bitmap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DrawBase" Collapsed="true">
+    <Position X="1.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAgAAAAAAAAAAAAAABAAAAIAAAA=</HashCode>
+      <FileName>DrawBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="ScrollBarStyle" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraphicsDef.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Dimension" Collapsed="true">
+    <Position X="5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraphicsDef.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="UnitType" Collapsed="true">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraphicsDef.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Align" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraphicsDef.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="EditScrollStyle" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Edit.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="EditLineStyle" Collapsed="true">
+    <Position X="5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Edit.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

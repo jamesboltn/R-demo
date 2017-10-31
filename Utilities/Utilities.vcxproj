@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{81A81313-71FD-4F18-A9DD-7E47C81643E9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Utilities</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;UTILITIES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;rasapi32.lib;wininet.lib;wbemuuid.lib;Psapi.lib;ws2_32.lib;Userenv.lib;Wtsapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>cd $(SolutionDir)Libraries and Resources\VC140_Runtime\Debug_x86
+copy /y msvcp140d.dll $(OutDir)
+copy /y ucrtbased.dll $(OutDir)
+copy /y vcruntime140d.dll $(OutDir)
+if not exist "$(OutDir)modules" mkdir "$(OutDir)modules"
+if not exist "$(OutDir)modules\openconnect" mkdir "$(OutDir)modules\openconnect"
+xcopy "$(SolutionDir)openconnect_output\*.*" "$(OutDir)modules\openconnect\" /Y/D/E
+cd $(SolutionDir)Libraries and Resources
+copy /y PostBuildCleanUp.bat $(OutDir)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy VC runtime, openconnect to the output directory</Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>RD /S /Q "$(OutDir)"</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Delete all the content in $(OutDir)</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;UTILITIES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;rasapi32.lib;wininet.lib;wbemuuid.lib;Psapi.lib;ws2_32.lib;Userenv.lib;Wtsapi32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd $(SolutionDir)Libraries and Resources\VC140_Runtime\Debug_x64
+copy /y msvcp140d.dll $(OutDir)
+copy /y ucrtbased.dll $(OutDir)
+copy /y vcruntime140d.dll $(OutDir)
+if not exist "$(OutDir)modules" mkdir "$(OutDir)modules"
+if not exist "$(OutDir)modules\openconnect" mkdir "$(OutDir)modules\openconnect"
+xcopy "$(SolutionDir)openconnect_output\*.*" "$(OutDir)modules\openconnect\" /Y/D/E
+cd $(SolutionDir)Libraries and Resources
+copy /y PostBuildCleanUp.bat $(OutDir)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy VC runtime, openconnect to the output directory.</Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;UTILITIES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;rasapi32.lib;wininet.lib;wbemuuid.lib;Psapi.lib;ws2_32.lib;Userenv.lib;Wtsapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd $(SolutionDir)Libraries and Resources\VC140_Runtime\Release_x86
+copy /y msvcp140.dll $(OutDir)
+copy /y ucrtbase.dll $(OutDir)
+copy /y vcruntime140.dll $(OutDir)
+if not exist "$(OutDir)modules" mkdir "$(OutDir)modules"
+if not exist "$(OutDir)modules\openconnect" mkdir "$(OutDir)modules\openconnect"
+xcopy "$(SolutionDir)openconnect_output\*.*" "$(OutDir)modules\openconnect\" /Y/D/E
+cd $(SolutionDir)Libraries and Resources
+copy /y PostBuildCleanUp.bat $(OutDir)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy VC runtime, openconnect to the output directory</Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;UTILITIES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;rasapi32.lib;wininet.lib;wbemuuid.lib;Psapi.lib;ws2_32.lib;Userenv.lib;Wtsapi32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd $(SolutionDir)Libraries and Resources\VC140_Runtime\Release_x64
+copy /y msvcp140.dll $(OutDir)
+copy /y ucrtbase.dll $(OutDir)
+copy /y vcruntime140.dll $(OutDir)
+if not exist "$(OutDir)modules" mkdir "$(OutDir)modules"
+if not exist "$(OutDir)modules\openconnect" mkdir "$(OutDir)modules\openconnect"
+xcopy "$(SolutionDir)openconnect_output\*.*" "$(OutDir)modules\openconnect\" /Y/D/E
+cd $(SolutionDir)Libraries and Resources
+copy /y PostBuildCleanUp.bat $(OutDir)
+</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy VC runtime, openconnect to the output directory.</Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ComponentObjectModel.h" />
+    <ClInclude Include="DateTime.h" />
+    <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="GlobalDataType.h" />
+    <ClInclude Include="Hardware.h" />
+    <ClInclude Include="InstanceLimit.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="MemoryMappedFile.h" />
+    <ClInclude Include="PreInclude.h" />
+    <ClInclude Include="Registry.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StringAssist.h" />
+    <ClInclude Include="Synchronization.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="WindowsManagementInstrumentation.h" />
+    <ClInclude Include="WindowsService.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ComponentObjectModel.cpp" />
+    <ClCompile Include="Converter.cpp" />
+    <ClCompile Include="DateTime.cpp" />
+    <ClCompile Include="Hardware.cpp" />
+    <ClCompile Include="List.cpp" />
+    <ClCompile Include="MemoryMappedFile.cpp" />
+    <ClCompile Include="Synchronization.cpp" />
+    <ClCompile Include="System.cpp" />
+    <ClCompile Include="UtilitiesEntry.cpp" />
+    <ClCompile Include="FileSystem.cpp" />
+    <ClCompile Include="InstanceLimit.cpp" />
+    <ClCompile Include="MultiThread.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="StringAssist.cpp" />
+    <ClCompile Include="WindowsManagementInstrumentation.cpp" />
+    <ClCompile Include="WindowsService.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Utilities.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

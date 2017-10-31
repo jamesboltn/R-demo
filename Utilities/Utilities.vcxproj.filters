@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Global">
+      <UniqueIdentifier>{c98c694c-de8a-457d-a5c8-ae20802d414f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{ad1c8b6e-c301-42c1-aea5-801c3f1d52eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Container">
+      <UniqueIdentifier>{4dabb26d-11c3-4782-8015-206b0c25a1f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Container">
+      <UniqueIdentifier>{03246721-cdb4-4c4c-8bcb-1b2ecb5cc2cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utilities.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="PreInclude.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalDataType.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsService.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="InstanceLimit.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Hardware.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="DateTime.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentObjectModel.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsManagementInstrumentation.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryMappedFile.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Synchronization.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="StringAssist.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="List.h">
+      <Filter>Model\Container</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WindowsService.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Converter.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="DateTime.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiThread.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="InstanceLimit.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilitiesEntry.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Hardware.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentObjectModel.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsManagementInstrumentation.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSystem.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryMappedFile.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Synchronization.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="StringAssist.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="List.cpp">
+      <Filter>Implementation\Container</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Utilities.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

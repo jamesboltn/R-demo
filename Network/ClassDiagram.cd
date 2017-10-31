@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="InternetOption" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAggAAAAAAAAACEIEQAAAAAACCIAAAAAAAMAAAAA=</HashCode>
+      <FileName>InternetOption.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetworkInterface" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IICQAAACAAAkAAAgAQBACAAAwAAAAAEAAAAAQBCAAAA=</HashCode>
+      <FileName>NetworkInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetworkAdapterHelper" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAISAAAAAAAQAAAAAABAQAAAAAAABABAABAAAAAAYA=</HashCode>
+      <FileName>NetworkAdapterHelper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetworkInterfaceHelper" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAgAAAE=</HashCode>
+      <FileName>NetworkInterfaceHelper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetworkUtilities" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NetworkUtilities.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SocketBase">
+    <Position X="2.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAgAAAAAAAAAIABAABAACAAQQAAAAAAAE=</HashCode>
+      <FileName>SocketBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SocketBaseTCP">
+    <Position X="0.5" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SocketBaseTCP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SocketBaseUDP">
+    <Position X="3.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAE=</HashCode>
+      <FileName>SocketBaseUDP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TCPClient">
+    <Position X="0.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAIAAAoAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>TCPClient.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UDPClient">
+    <Position X="3.25" Y="6.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAIAAAoAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>UDPClient.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UDPServer">
+    <Position X="5.25" Y="9.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAgBAAAAAAAIQAAAAAAE=</HashCode>
+      <FileName>UDPServer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TCPServer">
+    <Position X="8" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAEAAAAAAAgAAAAAAAAIAAACAAAA=</HashCode>
+      <FileName>TCPServer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServerBase&lt;ChildClass&gt;">
+    <Position X="5.75" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAIAAEIAAAAAEAAAACAAgEAI=</HashCode>
+      <FileName>ServerBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="InternetProtocolVersion" Collapsed="true">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NetworkDef.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SocketErrorMessageHandler" Collapsed="true">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NetworkDef.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

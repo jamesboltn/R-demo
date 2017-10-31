@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Global">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{f9223722-5d85-4595-be9c-b7d8394217dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Win32_StandardControl">
+      <UniqueIdentifier>{132d6146-dfa2-482b-8cad-05f84a09fcfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Win32_StandardControl\Controls">
+      <UniqueIdentifier>{999b5c1b-8900-4c20-abfd-d534d962e7fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Win32_StandardControl">
+      <UniqueIdentifier>{af35b536-d41a-4a0f-aa77-a8e31c866cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Win32_StandardControl\Controls">
+      <UniqueIdentifier>{acf17ec3-231e-4b49-8b51-9a6a343d8549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Draw2D">
+      <UniqueIdentifier>{9731a8db-0fbd-4ed7-95a8-64adca36bd03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Draw_2D">
+      <UniqueIdentifier>{ac79334b-ab62-48d3-96e2-fbb29ed093a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Win32_StandardControl\Controls\Edit">
+      <UniqueIdentifier>{14844a68-1f2d-4bbd-b358-a94efe21a91d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Win32_StandardControl\Controls\Edit">
+      <UniqueIdentifier>{a03602c6-062e-4f0f-9b47-b4a7287d2a70}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Button.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckBox.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboBox.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="DataGrid.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="DateTimePicker.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupBox.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ListBox.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressBar.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="RadioButton.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollBar.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Static.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusBar.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeView.h">
+      <Filter>Model\Win32_StandardControl\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlBase.h">
+      <Filter>Model\Win32_StandardControl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBind.h">
+      <Filter>Model\Win32_StandardControl</Filter>
+    </ClInclude>
+    <ClInclude Include="PageManager.h">
+      <Filter>Model\Win32_StandardControl</Filter>
+    </ClInclude>
+    <ClInclude Include="UIBase.h">
+      <Filter>Model\Win32_StandardControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Model\Win32_StandardControl</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClass.h">
+      <Filter>Model\Win32_StandardControl</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowAssistFunc.h">
+      <Filter>Model\Win32_StandardControl</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsDef.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Page.h">
+      <Filter>Model\Win32_StandardControl</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlMessageHandler.h">
+      <Filter>Model\Win32_StandardControl</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawBase.h">
+      <Filter>Model\Draw2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Bitmap.h">
+      <Filter>Model\Draw2D</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Edit.h">
+      <Filter>Model\Win32_StandardControl\Controls\Edit</Filter>
+    </ClInclude>
+    <ClInclude Include="UnsignedFloatEdit.h">
+      <Filter>Model\Win32_StandardControl\Controls\Edit</Filter>
+    </ClInclude>
+    <ClInclude Include="DigitalEdit.h">
+      <Filter>Model\Win32_StandardControl\Controls\Edit</Filter>
+    </ClInclude>
+    <ClInclude Include="EditWithLog.h">
+      <Filter>Model\Win32_StandardControl\Controls\Edit</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Button.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckBox.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ComboBox.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="DataGrid.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="DateTimePicker.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupBox.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ListBox.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="RadioButton.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollBar.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Static.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusBar.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeView.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlBase.cpp">
+      <Filter>Implementation\Win32_StandardControl</Filter>
+    </ClCompile>
+    <ClCompile Include="PageManager.cpp">
+      <Filter>Implementation\Win32_StandardControl</Filter>
+    </ClCompile>
+    <ClCompile Include="UIBase.cpp">
+      <Filter>Implementation\Win32_StandardControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Implementation\Win32_StandardControl</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClass.cpp">
+      <Filter>Implementation\Win32_StandardControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsEntry.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowAssistFunc.cpp">
+      <Filter>Implementation\Win32_StandardControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Page.cpp">
+      <Filter>Implementation\Win32_StandardControl</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawBase.cpp">
+      <Filter>Implementation\Draw_2D</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBind.cpp">
+      <Filter>Implementation\Win32_StandardControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Bitmap.cpp">
+      <Filter>Implementation\Draw_2D</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressBar.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Edit.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls\Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="UnsignedFloatEdit.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls\Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="DigitalEdit.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls\Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="EditWithLog.cpp">
+      <Filter>Implementation\Win32_StandardControl\Controls\Edit</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Graphics.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
